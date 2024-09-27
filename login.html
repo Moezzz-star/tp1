@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body bgcolor="#f0f0f0">
+    <header>
+        <table width="40%">
+            <tr>
+                <td>
+                    <div class="logo">
+                        <a href="home.html"><img src="_images/pp.png" alt="SUP'COM Logo" width="100" height="70"></a>
+                    </div>
+                </td>
+                <td align="right"> <!-- Align the navigation to the right -->
+                    <nav>
+                        <table>
+                            <tr>
+                                <td><a href="index.html">Home</a></td>
+                                <td><a href="courses.html">Courses</a></td>
+                                <td><a href="services.html">Services</a></td>
+                                <td><a href="signup.html">Sign Up</a></td>
+                                <td>
+                                    <input type="text" placeholder="Search course/category">
+                                </td>
+                                <td><a href="notifications.html">Notifications</a></td>
+                            </tr>
+                        </table>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+    
+    <h1 align="center">Login</h1>
+    <center>
+        <div>
+            <form action="dashboard.html" method="post">
+                <table border="2" align="center">
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="Enter your email ending with @supcom.tn" pattern=".*@supcom\.tn$"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required placeholder="Enter your password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <a href="forgot-password.html">Forgot Password?</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">Log In</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
